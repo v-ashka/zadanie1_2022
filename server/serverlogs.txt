@@ -1,0 +1,4 @@
+|04/21/2022 03:32:31 PM.719|| Marcin Wijaszka | Serwer został uruchomiony na porcie 3000
+|04/21/2022 03:32:51 PM.498| GET | Adres IP klienta: 213.134.187.131 | lokalizacja: Poland | lokalny czas klienta: 4/21/2022, 5:32:51 PM
+|04/21/2022 03:32:54 PM.804| GET | Adres IP klienta: 213.134.187.131 | lokalizacja: Poland | lokalny czas klienta: 4/21/2022, 5:32:54 PM
+|04/21/2022 03:32:56 PM.300| GET | Adres IP klienta: 213.134.187.131 | lokalizacja: Poland | lokalny czas klienta: 4/21/2022, 5:32:56 PM

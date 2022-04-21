@@ -1,0 +1,15 @@
+{
+  "name": "zadanie1",
+  "version": "1.0.0",
+  "description": "Zadanie 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marcin Wijaszka",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "fs": "^0.0.1-security"
+  }
+}
