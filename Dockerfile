@@ -1,11 +1,3 @@
-# FROM node:17-slim
-# WORKDIR /var/node
-# ADD server ./
-# RUN ls -la
-# RUN npm install
-# # RUN cd /server
-# CMD npm run dev
-
 FROM scratch AS builder
 LABEL Autor: "Marcin Wijaszka"
 ADD "alpine-minirootfs-3.15.2-x86_64.tar.gz" /

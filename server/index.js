@@ -23,7 +23,7 @@ app.use(async function (request, response, next) {
         });
         res.on('end', () => {
           data = JSON.parse(data);
-          console.log(data);
+          //console.log(data);
           const ip = data.ip;
         
            http.get(`http://ip-api.com/json/${ip}`, res => {

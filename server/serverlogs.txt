@@ -2,3 +2,11 @@
 |04/21/2022 03:32:51 PM.498| GET | Adres IP klienta: 213.134.187.131 | lokalizacja: Poland | lokalny czas klienta: 4/21/2022, 5:32:51 PM
 |04/21/2022 03:32:54 PM.804| GET | Adres IP klienta: 213.134.187.131 | lokalizacja: Poland | lokalny czas klienta: 4/21/2022, 5:32:54 PM
 |04/21/2022 03:32:56 PM.300| GET | Adres IP klienta: 213.134.187.131 | lokalizacja: Poland | lokalny czas klienta: 4/21/2022, 5:32:56 PM
+|04/23/2022 05:49:30 PM.552|| Marcin Wijaszka | Serwer został uruchomiony na porcie 3000
+|04/23/2022 05:49:35 PM.733| GET | Adres IP klienta: 138.199.7.248 | lokalizacja: Netherlands | lokalny czas klienta: 4/23/2022, 7:49:35 PM
+|04/23/2022 05:49:54 PM.100| GET | Adres IP klienta: 138.199.7.248 | lokalizacja: Netherlands | lokalny czas klienta: 4/23/2022, 7:49:54 PM
+|04/23/2022 05:49:56 PM.662| GET | Adres IP klienta: 138.199.7.248 | lokalizacja: Netherlands | lokalny czas klienta: 4/23/2022, 7:49:56 PM
+|04/23/2022 05:50:38 PM.323| GET | Adres IP klienta: 45.14.71.9 | lokalizacja: Japan | lokalny czas klienta: 4/24/2022, 2:50:38 AM
+|04/23/2022 05:50:46 PM.790| GET | Adres IP klienta: 45.14.71.9 | lokalizacja: Japan | lokalny czas klienta: 4/24/2022, 2:50:46 AM
+|04/23/2022 05:50:50 PM.535| GET | Adres IP klienta: 45.14.71.9 | lokalizacja: Japan | lokalny czas klienta: 4/24/2022, 2:50:50 AM
+|04/23/2022 05:52:12 PM.89| GET | Adres IP klienta: 213.134.187.131 | lokalizacja: Poland | lokalny czas klienta: 4/23/2022, 7:52:12 PM
