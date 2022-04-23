@@ -49,3 +49,7 @@ jobs:
           platforms: linux/amd64,linux/arm64/v8,linux/arm/v7
           push: true
           tags: ghcr.io/v-ashka/zadanie1_2022:latest
+          #cache'owanie
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          
