@@ -1,14 +1,16 @@
 # Zadanie nr. 1 - LABORATORIUM PROGRAMOWANIA APLIKACJI W CHMURACH OBLICZENIOWYCH
 
-- [Część obowiązkowa](#czesc-obowiazkowa)
+- [1. Część obowiązkowa](#czesc-obow)
     - [1. Program serwera](#program-serwera)
-    - [2. Dockerfile ](#docker-file)
-    - [3. Różne architektury](#punkt-cztery)
-- [Część dodatkowa](#czesc-dodatkowa)
+    - [2. Dockerfile ](#dockerfile)
+    - [3. Różne architektury](#architektury)
+- [2. Część dodatkowa](#czesc-dodatkowa)
+    - [1. Dodatek 1](#dodatek1)
+    - [2. Dodatek 2](#dodatek2)
 
-## Część obowiązkowa
+## <a name="czesc-obow"></a>Część obowiązkowa
 
-### 1. Program serwera
+### <a name="program-serwera"></a> 1. Program serwera 
 Serwer został napisany w node.js, z dodatkowo zaimportowanym modułem express i fs do obsługi plików
 
 ```javascript
@@ -122,7 +124,7 @@ W przeglądarce zaś wygląda to następująco
 ![image](https://user-images.githubusercontent.com/47278535/164990691-44bb4d32-4b06-46d7-bdbf-eadce871eaa7.png)
 ![image](https://user-images.githubusercontent.com/47278535/164990732-2d86fc6a-5139-41bb-9064-203f391968db.png)
 
-### 2. i 3. Opracowanie plik Dockerfile i jego uruchomienie wraz z ustawieniem
+### <a name="dockerfile"></a> 2. i 3. Opracowanie plik Dockerfile i jego uruchomienie wraz z ustawieniem
 Dla celów laboratorium plik dockerfile został podzielony na sekcję buildera, który to pobierze alpine z pliku znajdującego się w lokalnym folderze użytkownika, zainstaluje go oraz wykona update.
 Kolejna część zajmuje się kwestią instalacji nodejs w wersji mocno okrojonej, co pozwoli zredukować wagę kontenera z 260MB do 62MB.
 Plik został stworzony w taki sposób aby wykorzystać warstwę scratch wraz z wieloetapowym budowaniem obrazu
@@ -176,7 +178,7 @@ docker image inspect node_server:latest
 
 W finalnej wersji obraz stworzonego serwera w nodejs zajmuje ```62.1MB``` co jak na serwer w nodejs, wydaje się być dobrym wynikiem.
 
-### 4. Zbudowanie obrazów na różnych architekturach
+### <a name="architektury"></a> 4. Zbudowanie obrazów na różnych architekturach
 W celu instalacji 3 podanych w zadaniu architektur **linux/arm/v7, linux/arm64/v8** oraz **linux/amd64**, na początku należy upewnić się czy emulator zasobów QEMU, jest już zainstalowany, jeżeli nie to:
 ```
 sudo apt-get install qemu-user-static
@@ -198,9 +200,9 @@ Jeżeli wszystko przebiegło pomyślnie na podanym repozytorium na dockerhub pow
 
 Utworzone repozytorium można znaleźć pod tym [linkiem](https://hub.docker.com/repository/docker/vashka99/zadanie1)
 
-## Część dodatkowa
+## <a name="czesc-dodatkowa"></a> Część dodatkowa
 
-### DODATEK 1
+### <a name="dodatek1"></a> DODATEK 1
 #zad1-dod
 ### Wykonanie punktu **4.** z wykorzystaniem Github Actions
 Dla podanego zadania został utworzony plik ***main.yml***, który to zostanie wykorzystany do buildowania w Github Actions
@@ -288,7 +290,7 @@ akcji zmniejszył się prawie 2 krotnie
 Linijki z komentarzem CACHED, związane są właśnie z opcją uruchomienia cach'eowania pliku
 ![image](https://user-images.githubusercontent.com/47278535/164993215-afe7cdb2-5354-4e0c-9635-ad94ed59514e.png)
 
-### DODATEK 2
+### <a name="dodatek2"></a> DODATEK 2
 ### 1. Wykorzystanie prywatnego rejestru na podstawie obrazu registry i uruchomienie go
 a. uruchomienie rejestru aby był on dostępny na porcie 6677
 ```
