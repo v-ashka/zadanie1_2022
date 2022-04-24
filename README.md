@@ -1,10 +1,10 @@
 # Zadanie nr. 1 - LABORATORIUM PROGRAMOWANIA APLIKACJI W CHMURACH OBLICZENIOWYCH
 
-- [Część obowiązkowa](#Część obowiązkowa)
-    - [1. Program serwera](#Program serwera)
-    - [2. Dockerfile ](#Docker file)
+- [Część obowiązkowa](#czesc-obowiazkowa)
+    - [1. Program serwera](#program-serwera)
+    - [2. Dockerfile ](#docker-file)
     - [3. Różne architektury](#punkt-cztery)
-- [Część dodatkowa](#Część dodatkowa)
+- [Część dodatkowa](#czesc-dodatkowa)
 
 ## Część obowiązkowa
 
