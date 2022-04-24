@@ -1,6 +1,6 @@
 # Zadanie nr. 1 - LABORATORIUM PROGRAMOWANIA APLIKACJI W CHMURACH OBLICZENIOWYCH
 
-##Część obowiązkowa
+## Część obowiązkowa
 
 ### 1. Program serwera
 Serwer został napisany w node.js, z dodatkowo zaimportowanym modułem express i fs do obsługi plików
@@ -143,7 +143,7 @@ EXPOSE 3000
 CMD ["node", "index.js"]
 ```
 
-####Wykorzystane polecenia:
+#### Wykorzystane polecenia:
 a. zbudowanie opracowanego obrazu kontenera
 ```
 DOCKER_BUILDKIT=1 docker build -t node_server .
@@ -167,6 +167,8 @@ docker image history node_server:latest
 docker image inspect node_server:latest
 ```
 ![image](https://user-images.githubusercontent.com/47278535/164992005-15feb693-d85d-43e9-9c7d-9e5ab3a153e9.png)
+
+W finalnej wersji obraz stworzonego serwera w nodejs zajmuje ```62.1MB``` co jak na serwer w nodejs, wydaje się być dobrym wynikiem.
 
 ### 4. Zbudowanie obrazów na różnych architekturach
 W celu instalacji 3 podanych w zadaniu architektur **linux/arm/v7, linux/arm64/v8** oraz **linux/amd64**, na początku należy upewnić się czy emulator zasobów QEMU, jest już zainstalowany, jeżeli nie to:
@@ -193,6 +195,7 @@ Utworzone repozytorium można znaleźć pod tym [linkiem](https://hub.docker.com
 ## Część dodatkowa
 
 ### DODATEK 1
+#zad1-dod
 ### Wykonanie punktu **4.** z wykorzystaniem Github Actions
 Dla podanego zadania został utworzony plik ***main.yml***, który to zostanie wykorzystany do buildowania w Github Actions
 Utworzony plik został już podzielony na część związaną z cache'owaniem oraz z przesyłaniem danych na github, zamiast na dockerhub'a.
@@ -336,11 +339,11 @@ DNS.1 = localhost
 ```
 openssl x509 -req -sha256 -days 1024 -in localhost.csr -CA cert.pem -CAkey cert.key -CAcreateserial -extfile domains.ext -out localhost.crt
 ```
-5. W katalogu **auth** uruchamiamy mechanizm autentykacji pole admin to będzie login, polem hasło jest 1234, podane dane zostaną zapisane do pliku auth/httpasswd
+5. W katalogu **auth** uruchamiamy mechanizm autentykacji pole admin to będzie login, polem hasło jest 1234, podane dane zostaną zapisane do pliku auth/httpasswd #htpasswd-auth
 ```
 docker run --entrypoint htpasswd httpd:2 -Bbn admin 1234 > auth/htpasswd
 ```
-6. Kolejnym krokiem jest wyłączenie i usunięcie rejestru który został utworzony i uruchomiony w zadaniu dodatkowym 1
+6. Kolejnym krokiem jest wyłączenie i usunięcie rejestru który został utworzony i uruchomiony w [zadaniu dodatkowym 1](#zad1-dod)
 ```
 docker container stop priv_reg
 docker rm priv_reg
@@ -367,7 +370,7 @@ W takim razie logujemy się wpisując
 ```
 docker login localhost:6677
 ```
-I podajemy dane które zostały podane wtrakcie uruchomnienia mechanizmu autentykacji, w tym przypadku login: admin, hasło: 1234
+I podajemy dane które zostały podane wtrakcie [uruchomnienia mechanizmu autentykacji](#htpasswd-auth), w tym przypadku login: admin, hasło: 1234
 ![image](https://user-images.githubusercontent.com/47278535/164994377-4e08d9c8-6882-4f98-8da8-5b4138f0a0c6.png)
 
 Powyższy zrzut przedstawia efekt zalogowania się i późniejszą już możliwość wykonania operacji push na prywatny rejestr, a więc można uznać że konfiguracja prywatnego rejestru zakończyła się pomyślnie.
